@@ -1,0 +1,13 @@
+Stückliste exportiert aus D:/Benutzer/V17/Dokumente/EAGLE/projects/LCD2004_Adapter/LCD2004_Adapter.sch am 24.04.2021 14:31
+
+Qty Value     Device        Package  Parts                                        Description               MF MPN OC_FARNELL OC_NEWARK POPULARITY SPICEPREFIX
+1             FE05-2        FE05-2   J3_LCD                                       FEMALE HEADER                    unknown    unknown   3                     
+5             KURZHUBTASTER B3F-10XX S1_LEFT, S2_UP, S3_CENTER, S4_DOWN, S5_RIGHT OMRON SWITCH                                                                
+1             ML10          ML10     EXP1_LCD                                     HARTING                          unknown    unknown   7                     
+1   10k       R-EU_0207/10  0207/10  R6                                           RESISTOR, European symbol                             81         R          
+1   1k        R-EU_0207/10  0207/10  R4                                           RESISTOR, European symbol                             81         R          
+1   22        R-EU_0207/10  0207/10  R1                                           RESISTOR, European symbol                             81         R          
+1   2k2       R-EU_0207/10  0207/10  R5                                           RESISTOR, European symbol                             81         R          
+1   470       R-EU_0207/10  0207/10  R3                                           RESISTOR, European symbol                             81         R          
+2   4k7       R-EU_0207/10  0207/10  R2, R7                                       RESISTOR, European symbol                             81         R          
+1   BZX85C3V3 BZX85         DO41Z10  D1                                           Z DIODE                                               0                     

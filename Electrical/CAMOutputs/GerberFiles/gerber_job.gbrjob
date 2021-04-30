@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-04-24T12:31:05Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "LCD2004_Adapter"
+        },
+        "Owner": "Markus Scheich <markus.scheich@gmx.de>",
+        "Size": {
+            "X": 100,
+            "Y": 55
+        }
+    }
+}
