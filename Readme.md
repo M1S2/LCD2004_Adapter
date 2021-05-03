@@ -1,5 +1,7 @@
 # LCD2004 Adapter
 
+![Before](/Images/LCD_withAdapter2.jpg)
+
 This is an adapter to connect the DZ2004A-V1.0 LCD (Geeetech Prusa i3 pro B display) to the BIGTREETECH SKR E3 DIP V1.1 main board (LCD port).
 This adapter is necessary because:
 - The wiring of the LCD connectors on the display and the main board are different. The LCD2004 adapter connects the correct traces to make the display work again.
@@ -12,10 +14,13 @@ Limitations:
 The LCD2004 adapter is using 5 buttons to control the printers functions. This is inspired by the Zonestar display. 
 Depending on which button is pressed, a different voltage is generated at the ADC_KEYPAD pin. This pin is read by an ADC on the main board.
 The "UP" button is located on the bottom side of the PCB. This is correct because up means scrolling up which is the button on the bottom.
+
 **Caution:** The SKR E3 DIP main board (and many other 32-bit boards) are working on 3.3V logic. Most pins on the ARM Cortex M3 STM32F103RCT6 are 5V tolerant (you can connect 5V to them) **but the ADC pin isn't (don't connect 5V to it)**! The LCD2004_Adapter uses a 3.3V zener diode to produce the correct voltage.
 
 ## PCB
 The schematic and PCB was created using EAGLE. It was designed to be manufactured using toner transfer method so all traces are as big as possible.
+
+![Before](/Images/LCD2004_Adapter_PCB_1.jpg)
 
 ## Housing
 Print the following parts:
@@ -35,6 +40,10 @@ The following parts are needed additionally:
 ## Cabling
 A default 10-pin ribbon cable can be used to connect the adapter with the main board. 
 The only thing that must be changed here is to extract pin 8 (ADC_KEYPAD) on the main board side of the cable and wire it to the Servo pin (PA1) on the SKR E3 DIP board.
+
+Cable complete                                |  SKR E3 DIP side
+:--------------------------------------------:|:-------------------------:
+![Cable complete](/Images/Cable_complete.jpg) |  ![Cable SKR E3 DIP side](/Images/Cable_SKR_E3_DIP.jpg)
 
 ## Firmware adaptions
 Make the following adaptions to the Marlin 2.0.8 firmware:
