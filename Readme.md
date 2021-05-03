@@ -46,11 +46,14 @@ Cable complete                                |  SKR E3 DIP side
 ![Cable complete](/Images/Cable_complete.jpg) |  ![Cable SKR E3 DIP side](/Images/Cable_SKR_E3_DIP.jpg)
 
 ## Firmware adaptions
-Make the following adaptions to the Marlin 2.0.8 firmware:
+Make the following adaptions to the Marlin firmware (line numbers are refering to Marlin 2.0.8):
 - <Marlin root>/Marlin/Configuration.h: 
   Uncomment the `#define ZONESTAR_LCD` (in line 2086)
 - <Marlin root>/Marlin/src/pins/stm32f1/pins_BTT_SKR_E3_DIP.h:
   Comment the line 190: `#error "CAUTION! ZONESTAR_LCD requires wiring modifications. See 'pins_BTT_SKR_MINI_E3_common.h' for details. Comment out this line to continue."`
+
+## More Images
+More images can be found in the [Images](/Images/) folder.
 
 ## Using the encoder again
 To use the encoder again instead of the 5 buttons, here are some inspirations. Because Octoprint is used most of the time, there wasn't spent much time on this.
