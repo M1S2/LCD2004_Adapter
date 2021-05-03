@@ -5441,16 +5441,16 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="S1_LEFT" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
-<part name="S2_UP" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
+<part name="S2_DOWN" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
 <part name="S3_CENTER" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
-<part name="S4_DOWN" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
+<part name="S4_UP" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
 <part name="S5_RIGHT" library="OwnDevices" library_urn="urn:adsk.eagle:library:19498084" deviceset="KURZHUBTASTER" device="" package3d_urn="urn:adsk.eagle:package:21817514/2"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="22"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="470"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2k2"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4k7"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BZX85" device="" package3d_urn="urn:adsk.eagle:package:43341/1" value="BZX85C3V3"/>
 <part name="EXP1_LCD" library="con-harting-ml" library_urn="urn:adsk.eagle:library:149" deviceset="ML10" device="" package3d_urn="urn:adsk.eagle:package:6967/1"/>
@@ -5470,7 +5470,7 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="105.41" y="86.36" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="102.87" y="109.855" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S2_UP" gate="1" x="119.38" y="106.68" smashed="yes">
+<instance part="S2_DOWN" gate="1" x="119.38" y="106.68" smashed="yes">
 <attribute name="NAME" x="118.11" y="86.36" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="115.57" y="109.855" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -5478,7 +5478,7 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="130.81" y="86.36" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="128.27" y="109.855" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S4_DOWN" gate="1" x="144.78" y="106.68" smashed="yes">
+<instance part="S4_UP" gate="1" x="144.78" y="106.68" smashed="yes">
 <attribute name="NAME" x="143.51" y="86.36" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="140.97" y="109.855" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -5556,7 +5556,7 @@ DIN A4, landscape with location and doc. field</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="S2_UP" gate="1" pin="S"/>
+<pinref part="S2_DOWN" gate="1" pin="S"/>
 <wire x1="119.38" y1="114.3" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5570,7 +5570,7 @@ DIN A4, landscape with location and doc. field</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="S4_DOWN" gate="1" pin="S"/>
+<pinref part="S4_UP" gate="1" pin="S"/>
 <wire x1="144.78" y1="114.3" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5586,13 +5586,13 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="S1_LEFT" gate="1" pin="P"/>
 <pinref part="S5_RIGHT" gate="1" pin="P"/>
 <wire x1="106.68" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="S2_UP" gate="1" pin="P"/>
+<pinref part="S2_DOWN" gate="1" pin="P"/>
 <wire x1="119.38" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 <junction x="119.38" y="101.6"/>
 <pinref part="S3_CENTER" gate="1" pin="P"/>
 <wire x1="132.08" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
 <junction x="132.08" y="101.6"/>
-<pinref part="S4_DOWN" gate="1" pin="P"/>
+<pinref part="S4_UP" gate="1" pin="P"/>
 <wire x1="144.78" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
 <junction x="144.78" y="101.6"/>
 <wire x1="106.68" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>

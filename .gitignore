@@ -1,3 +1,8 @@
+# Slicer files
+*.gcode
+
+# https://www.toptal.com/developers/gitignore/api/eagle
+
 # Created by https://www.toptal.com/developers/gitignore/api/eagle
 # Edit at https://www.toptal.com/developers/gitignore?templates=eagle
 
